@@ -16,6 +16,9 @@ The default CSV file from my bank has three problems:
 
 ```shell
 alias firefly-csv-preprocessor='./target/firefly-csv-preprocessor-1.0.0-SNAPSHOT-runner'
+
+cp ./target/firefly-csv-preprocessor-1.0.0-SNAPSHOT-runner $HOME/.local/bin/firefly-csv-preprocessor
+
 firefly-csv-preprocessor -i input.csv \
                          -o output.csv \
                          -ca "IBAN/BBAN" \
